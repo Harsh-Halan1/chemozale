@@ -1,7 +1,7 @@
 import React from 'react';
 import { FEST_DATA } from '../data/chemozaleData';
-import { Mail, Phone, MapPin, Instagram, Linkedin, Youtube, ExternalLink, Heart } from 'lucide-react';
-import PeriodicTile from './PeriodicTile';
+import { Mail, Phone, MapPin, Instagram, Linkedin, Youtube, ExternalLink } from 'lucide-react';
+import iicheLogo from '../assets/iiche_logo.webp';
 
 export default function Footer() {
   return (
@@ -17,10 +17,13 @@ export default function Footer() {
           
           {/* Section 1: Brand & Contact Info */}
           <div className="lg:col-span-5 space-y-5">
-            <div className="flex items-center gap-2">
-              <div className="flex items-center gap-1">
-                <PeriodicTile number={6} symbol="C" name="" size="sm" variant="green" interactive={false} />
-                <PeriodicTile number={42} symbol="Mo" name="" size="sm" variant="green" interactive={false} />
+            <div className="flex items-center gap-3">
+              <div className="w-11 h-11 rounded-lg bg-black/60 p-1 border border-emerald-500/40 flex items-center justify-center shadow-lg">
+                <img
+                  src={iicheLogo}
+                  alt="IIChE Logo"
+                  className="w-full h-full object-contain filter drop-shadow"
+                />
               </div>
               <span className="font-display text-2xl tracking-widest text-white">
                 CHEMOZALE '26

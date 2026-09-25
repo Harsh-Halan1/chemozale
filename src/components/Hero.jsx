@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Calendar, MapPin, ChevronDown, Flame, Beaker, Shield, Sparkles } from 'lucide-react';
+import { Calendar, MapPin, ChevronDown, Flame, Beaker } from 'lucide-react';
 import PeriodicTile from './PeriodicTile';
 import { FEST_DATA } from '../data/chemozaleData';
 
@@ -57,8 +57,10 @@ export default function Hero() {
       <div className="my-2">
         <h1 className="sr-only">CHEMOZALE 2026 — Chemical Engineering Fest</h1>
         
-        {/* Periodic Wordmark: [C] H E [Mo] [Al] E */}
-        <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2.5 max-w-4xl mx-auto py-2">
+        {/* Periodic Wordmark: [C] H E [Mo] Z [Al] E 
+            Proportionally calibrated: non-element characters use font-sans font-black 
+            matching the tile characters with the exact same height and cap-height */}
+        <div className="flex flex-wrap items-center justify-center gap-1 sm:gap-2 max-w-5xl mx-auto py-2">
           {/* [6] C */}
           <PeriodicTile
             number={6}
@@ -69,9 +71,11 @@ export default function Hero() {
             variant="green"
           />
           
-          {/* HE */}
-          <div className="font-display text-5xl sm:text-7xl lg:text-8xl tracking-wider text-white select-none px-0.5 drop-shadow-lg">
-            HE
+          {/* HE - perfectly matched in height and font-weight with element symbols */}
+          <div className="h-24 sm:h-28 flex items-center justify-center px-1 sm:px-1.5">
+            <span className="font-sans font-black text-4xl sm:text-5xl text-white select-none leading-none tracking-tight drop-shadow-md">
+              HE
+            </span>
           </div>
 
           {/* [42] Mo */}
@@ -84,6 +88,13 @@ export default function Hero() {
             variant="green"
           />
 
+          {/* Z */}
+          <div className="h-24 sm:h-28 flex items-center justify-center px-0.5 sm:px-1">
+            <span className="font-sans font-black text-4xl sm:text-5xl text-white select-none leading-none tracking-tight drop-shadow-md">
+              Z
+            </span>
+          </div>
+
           {/* [13] Al */}
           <PeriodicTile
             number={13}
@@ -95,8 +106,10 @@ export default function Hero() {
           />
 
           {/* E */}
-          <div className="font-display text-5xl sm:text-7xl lg:text-8xl tracking-wider text-white select-none px-0.5 drop-shadow-lg">
-            E
+          <div className="h-24 sm:h-28 flex items-center justify-center px-0.5 sm:px-1">
+            <span className="font-sans font-black text-4xl sm:text-5xl text-white select-none leading-none tracking-tight drop-shadow-md">
+              E
+            </span>
           </div>
         </div>
 

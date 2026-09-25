@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Flame, Truck, ShieldAlert } from 'lucide-react';
-import PeriodicTile from './PeriodicTile';
+import { Menu, X, Truck } from 'lucide-react';
+import iicheLogo from '../assets/iiche_logo.webp';
 
 export default function Navbar({ onOpenRVLoader }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,11 +32,14 @@ export default function Navbar({ onOpenRVLoader }) {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         
-        {/* Brand Mark with Periodic Tiles */}
+        {/* Brand Mark with IIChE Official Crest Logo */}
         <a href="#" className="flex items-center gap-3 group">
-          <div className="flex items-center gap-1">
-            <PeriodicTile number={6} symbol="C" name="" size="sm" variant="green" interactive={false} />
-            <PeriodicTile number={42} symbol="Mo" name="" size="sm" variant="green" interactive={false} />
+          <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-lg bg-black/60 p-1 border border-emerald-500/40 flex items-center justify-center shadow-lg group-hover:border-bb-neon transition">
+            <img
+              src={iicheLogo}
+              alt="IIChE Logo"
+              className="w-full h-full object-contain filter drop-shadow"
+            />
           </div>
           <div className="flex flex-col">
             <div className="flex items-center gap-1.5">

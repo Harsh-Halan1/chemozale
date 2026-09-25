@@ -1,3 +1,12 @@
+// Asset imports for official event artwork
+import alchemyImg from '../assets/Alchemy of Imperfection.webp';
+import betterCallImg from '../assets/Better Call Engineer.webp';
+import crackTheCaseImg from '../assets/Crack The Case.webp';
+import flowCartelImg from '../assets/Flow Cartel.webp';
+import nationClashImg from '../assets/Nation Clash.webp';
+import heisenbergImg from '../assets/Project Heisenberg.webp';
+import researchBlueprintImg from '../assets/Research Blueprint.webp';
+
 export const FEST_DATA = {
   name: "CHEMOZALE",
   edition: "2026",
@@ -43,13 +52,14 @@ export const SUB_EVENTS = [
   {
     id: "crack-the-case",
     title: "Crack The Case",
-    encodedTitle: "[Cr]ack The [Ca]se",
+    encodedTitle: "[C]rack The Case",
+    image: crackTheCaseImg,
+    // Updated: only C (Carbon) as requested
     elements: [
-      { symbol: "Cr", number: 24, name: "Chromium", mass: "51.99" },
-      { symbol: "Ca", number: 20, name: "Calcium", mass: "40.07" }
+      { symbol: "C", number: 6, name: "Carbon", mass: "12.01" }
     ],
-    category: "Industrial Forensic & Plant Case Study",
-    tagline: "Troubleshoot real-world plant disasters before the reactor reaches critical mass.",
+    category: "Industrial Case Challenge & Alumni Mentorship",
+    tagline: "Think. Analyse. Solve. Crack the Case!",
     badge: "Case Study",
     themeColor: "from-emerald-500 to-teal-700",
     glowColor: "rgba(16, 185, 129, 0.4)",
@@ -63,22 +73,215 @@ export const SUB_EVENTS = [
     format: "Offline",
     teamSize: "2 - 4 Members",
     purityYield: "98.5%",
-    description: "Step into the shoes of industrial forensic engineers. You are presented with a catastrophic chemical plant malfunction, ambiguous telemetry logs, and suspicious batch anomalies. Analyze reaction kinetics, isolate root causes, and crack the case before catastrophic failure.",
+    registrationLink: "https://forms.gle/wPNotvwKfLB877v19",
+    description: "Put your chemical engineering skills to the test! Tackle real-world industry challenges, think critically, and work with your team to uncover innovative solutions. Get insights, guidance, and valuable interactions with our alumni as you Think. Analyse. Solve. Crack the Case!",
     objectives: [
-      "Deconstruct telemetry data from failed catalytic cracking units",
-      "Identify hazardous gas leaks and exothermic runaway triggers",
-      "Pitch remediation protocols to a simulated regulatory inquiry"
+      "Tackle real-world industry problem statements under critical evaluation",
+      "Interact with and receive valuable guidance from distinguished alumni mentors",
+      "Synthesize innovative team solutions and crack the forensic case"
     ],
     rounds: [
-      { name: "Phase 1: Telemetry Triage", desc: "Rapid hazard isolation from industrial P&ID sensor dumps." },
-      { name: "Phase 2: Root Cause Synthesis", desc: "Formulate the exact chemical failure chain and financial damage estimate." },
-      { name: "Phase 3: The Board Defense", desc: "5-minute cross-examination in front of senior plant auditors." }
+      { name: "Phase 1: Telemetry & Case Isolation", desc: "Deconstruct real-world problem statements and operational anomalies." },
+      { name: "Phase 2: Alumni Interaction & Mentorship", desc: "Gain critical industry guidance and refine technical strategy." },
+      { name: "Phase 3: The Board Defense", desc: "Pitch the final resolution to the panel of judges and alumni." }
+    ]
+  },
+  {
+    id: "better-call-engineer",
+    title: "Better Call Engineer",
+    encodedTitle: "[Be]tter [C]all Engineer",
+    image: betterCallImg,
+    // Updated: Be (Beryllium) and C (Carbon) as requested
+    elements: [
+      { symbol: "Be", number: 4, name: "Beryllium", mass: "9.01" },
+      { symbol: "C", number: 6, name: "Carbon", mass: "12.01" }
+    ],
+    category: "Industrial Plant Visit & Solution Pitch",
+    tagline: "Analyse. Optimize. Innovate.",
+    badge: "Consultancy",
+    themeColor: "from-yellow-400 to-amber-600",
+    glowColor: "rgba(250, 204, 21, 0.4)",
+    borderColor: "border-yellow-400/40",
+    textColor: "text-yellow-300",
+    accentBg: "bg-yellow-500/10",
+    icon: "Briefcase",
+    day: "Day 2 (10th Oct)",
+    time: "2:00 PM - 4:30 PM",
+    venue: "A-Block Drawing Hall / Industrial Site",
+    format: "Offline / Plant Visit",
+    teamSize: "3 - 4 Members",
+    purityYield: "99.1%",
+    registrationLink: "https://forms.gle/Djr6z6fNMcAYbdvg9",
+    description: "Step into the role of an industrial engineer and solve real-world plant challenges. Visit an industry, analyze the case, develop your solution, and pitch it to expert judges. Analyse. Optimize. Innovate.",
+    objectives: [
+      "Visit an operational chemical plant to observe live unit operations and constraints",
+      "Analyze the industrial case study, identify bottlenecks, and formulate optimizations",
+      "Pitch comprehensive technical solutions directly to expert industry judges"
+    ],
+    rounds: [
+      { name: "Stage 1: Industrial Site Visit", desc: "On-site reconnaissance and briefing on plant-level challenges." },
+      { name: "Stage 2: Solution Development Sprint", desc: "Formulate technical optimizations and financial feasibility models." },
+      { name: "Stage 3: Executive Pitch", desc: "Defend your engineering solution before the expert jury." }
+    ]
+  },
+  {
+    id: "research-blueprint",
+    title: "Research Blueprint",
+    encodedTitle: "[Re]search [B]lueprint",
+    image: researchBlueprintImg,
+    // Kept same: Re (Rhenium) and B (Boron)
+    elements: [
+      { symbol: "Re", number: 75, name: "Rhenium", mass: "186.20" },
+      { symbol: "B", number: 5, name: "Boron", mass: "10.81" }
+    ],
+    category: "Paper & Poster Presentation",
+    tagline: "RESEARCH BLUEPRINT — Where Ideas Take Shape. 🔬",
+    badge: "Research",
+    themeColor: "from-blue-400 to-indigo-600",
+    glowColor: "rgba(59, 130, 246, 0.4)",
+    borderColor: "border-blue-500/40",
+    textColor: "text-blue-300",
+    accentBg: "bg-blue-500/10",
+    icon: "FileSpreadsheet",
+    day: "Day 3 (11th Oct)",
+    time: "9:30 AM - 12:30 PM",
+    venue: "Seminar Hall 2",
+    format: "Offline / Paper & Poster",
+    teamSize: "1 - 3 Members",
+    purityYield: "98.0%",
+    registrationLink: "https://forms.gle/YESYKfctyFJNo2fQ6",
+    description: "A platform for curious minds to present, question, and transform ideas into impact. Showcase your research through a compelling paper and poster presentation, engage with emerging perspectives, and connect with ideas shaping the future of chemical engineering and beyond. Bring your research. Defend your ideas. Inspire what comes next.",
+    objectives: [
+      "Showcase cutting-edge chemical engineering research through paper & poster formats",
+      "Engage with emerging perspectives and novel academic methodologies",
+      "Defend your scientific discoveries before esteemed faculty mentors and peer scholars"
+    ],
+    rounds: [
+      { name: "Track 1: Paper Presentation", desc: "Oral presentation of rigorous research findings with slide deck." },
+      { name: "Track 2: Poster Gallery Exhibition", desc: "Interactive display and walkthrough of visual research blueprints." },
+      { name: "Track 3: Peer Defense & Cross-Q&A", desc: "Defense of theoretical methodologies against the research jury." }
+    ]
+  },
+  {
+    id: "alchemy-of-imperfection",
+    title: "Alchemy of Imperfection",
+    encodedTitle: "[Al]chemy of [I]mperfection",
+    image: alchemyImg,
+    // Kept same: Al (Aluminum) and I (Iodine)
+    elements: [
+      { symbol: "Al", number: 13, name: "Aluminum", mass: "26.98" },
+      { symbol: "I", number: 53, name: "Iodine", mass: "126.90" }
+    ],
+    category: "Kintsugi Ceramic Art & Chemistry",
+    tagline: "Where imperfections become art. Embrace the imperfect. Create the extraordinary. ✨",
+    badge: "Creative Lab",
+    themeColor: "from-fuchsia-500 to-amber-600",
+    glowColor: "rgba(217, 70, 239, 0.4)",
+    borderColor: "border-fuchsia-500/40",
+    textColor: "text-fuchsia-300",
+    accentBg: "bg-fuchsia-500/10",
+    icon: "FlaskRound",
+    day: "Day 3 (11th Oct)",
+    time: "1:30 PM - 3:30 PM",
+    venue: "Unit Operations Lab (B-Block)",
+    format: "Hands-on Workshop / Artistry",
+    teamSize: "Individual / Pair",
+    purityYield: "99.1%",
+    registrationLink: "https://forms.gle/2WBL5APpyq76SXwK7",
+    description: "Discover Kintsugi, the Japanese art of celebrating imperfection through beautiful golden seams. Create your own unique ceramic masterpiece in an experience that blends creativity, craftsmanship, and chemistry. Embrace the imperfect. Create the extraordinary. ✨",
+    objectives: [
+      "Discover Kintsugi: the timeless Japanese art of mending broken ceramics with gold",
+      "Apply resin chemistry, metallic gold powder, and structural binders to create seamless bonds",
+      "Take home your very own handcrafted ceramic masterpiece"
+    ],
+    rounds: [
+      { name: "Phase 1: Fracture Philosophy", desc: "Introduction to Kintsugi heritage and resin polymer preparation." },
+      { name: "Phase 2: Golden Joinery Assembly", desc: "Precise bonding of ceramic fragments using metallic golden seams." },
+      { name: "Phase 3: Curing & Masterpiece Exhibition", desc: "Final polishing and presentation of finished ceramic creations." }
+    ]
+  },
+  {
+    id: "flow-cartel",
+    title: "Flow Cartel",
+    encodedTitle: "[F]low [Ca]rtel",
+    image: flowCartelImg,
+    // Updated: F (Fluorine) and Ca (Calcium) as requested
+    elements: [
+      { symbol: "F", number: 9, name: "Fluorine", mass: "19.00" },
+      { symbol: "Ca", number: 20, name: "Calcium", mass: "40.08" }
+    ],
+    category: "Hands-on ANSYS CFD Technical Workshop",
+    tagline: "Hands-on Computational Fluid Dynamics (CFD) Workshop with ANSYS.",
+    badge: "CFD Workshop",
+    themeColor: "from-orange-500 to-rose-700",
+    glowColor: "rgba(249, 115, 22, 0.4)",
+    borderColor: "border-orange-500/40",
+    textColor: "text-orange-400",
+    accentBg: "bg-orange-500/10",
+    icon: "Gauge",
+    day: "Day 3 (11th Oct)",
+    time: "3:30 PM - 5:30 PM",
+    venue: "Computer Center Lab 4",
+    format: "Hands-on Workshop",
+    teamSize: "Individual / Pair",
+    purityYield: "99.0%",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdvFMSlneOy3ezp6wgXh34APDHgJz3_WXizfjiSf3s66FlgrA/viewform",
+    description: "This hands-on technical workshop will introduce participants to the fundamentals of Computational Fluid Dynamics (CFD) using ANSYS. Participants will learn geometry creation, meshing, material selection, boundary conditions, simulation setup, and result analysis through practical simulations. The workshop will conclude with an engineering application, providing participants with valuable hands-on experience in CFD modelling and analysis.",
+    objectives: [
+      "Master CAD geometry creation and advanced grid meshing fundamentals in ANSYS",
+      "Configure boundary conditions, material thermophysical properties, and Navier-Stokes solvers",
+      "Analyze velocity vectors, pressure contours, and solve a practical engineering application"
+    ],
+    rounds: [
+      { name: "Module 1: Geometry & Meshing Setup", desc: "CAD import, domain discretization, and grid independence fundamentals." },
+      { name: "Module 2: Solver Execution & Physics", desc: "Applying turbulence models, viscosity parameters, and boundary conditions." },
+      { name: "Module 3: Post-Processing & Engineering Case", desc: "Simulating a real-world chemical engineering fluid transport scenario." }
+    ]
+  },
+  {
+    id: "project-heisenberg",
+    title: "Project Heisenberg",
+    encodedTitle: "[Pr]oject [He]isenberg",
+    image: heisenbergImg,
+    // Updated: Pr (Praseodymium) and He (Helium) as requested
+    elements: [
+      { symbol: "Pr", number: 59, name: "Praseod.", mass: "140.91" },
+      { symbol: "He", number: 2, name: "Helium", mass: "4.00" }
+    ],
+    category: "Flagship Technical Innovation & Working Model",
+    tagline: "99.1% pure engineering ingenuity. Present your working process or invention.",
+    badge: "Flagship",
+    themeColor: "from-cyan-400 to-blue-600",
+    glowColor: "rgba(0, 229, 255, 0.45)",
+    borderColor: "border-cyan-400/50",
+    textColor: "text-cyan-300",
+    accentBg: "bg-cyan-500/10",
+    icon: "Atom",
+    day: "Day 2 (10th Oct)",
+    time: "9:30 AM - 1:30 PM",
+    venue: "N-Block Innovation Gallery",
+    format: "Offline Prototype / Simulation",
+    teamSize: "2 - 4 Members",
+    purityYield: "99.1%",
+    registrationLink: "https://forms.gle/Djr6z6fNMcAYbdvg9",
+    description: "The crown jewel of Chemozale. Showcase working prototypes, novel reactor blueprints, biocatalytic pathways, or continuous separation setups to an elite panel of chemical industrialists and academic scholars.",
+    objectives: [
+      "Demonstrate live working bench-scale model or verified dynamic simulation",
+      "Prove scalability, atom economy, and thermodynamic efficiency",
+      "Withstand Heisenberg-grade technical cross-examination"
+    ],
+    rounds: [
+      { name: "Stage 1: Purity Inspection", desc: "Judges review safety, mass balance calculations, and novel patentability." },
+      { name: "Stage 2: Live Prototype Run", desc: "Demonstration of prototype flow, heat recovery, or separation yield." },
+      { name: "Stage 3: Commercial Pitch", desc: "Convince the investment panel of capital expenditure ROI." }
     ]
   },
   {
     id: "nation-clash",
     title: "Nation Clash",
     encodedTitle: "[Na]tion [Cl]ash",
+    image: nationClashImg,
+    // Kept same: Na (Sodium) and Cl (Chlorine)
     elements: [
       { symbol: "Na", number: 11, name: "Sodium", mass: "22.98" },
       { symbol: "Cl", number: 17, name: "Chlorine", mass: "35.45" }
@@ -98,6 +301,7 @@ export const SUB_EVENTS = [
     format: "Offline",
     teamSize: "1 - 2 Members",
     purityYield: "97.8%",
+    registrationLink: "https://forms.gle/wPNotvwKfLB877v19",
     description: "Global chemical supply chains are geopolitical chessboards. Represent OPEC delegations, EU environmental tribunals, lithium cartel directors, and energy ministries in a fierce debate over fuel embargoes and sustainable transition mandates.",
     objectives: [
       "Defend national energy policies under surprise embargo crises",
@@ -109,180 +313,6 @@ export const SUB_EVENTS = [
       { name: "Round 2: The Embargo Shock", desc: "Unannounced trade sanction introduced mid-debate requiring emergency pivot." },
       { name: "Round 3: Bilateral Treaty Draft", desc: "Bargain fuel quotas and carbon tax offsets with competitor syndicates." }
     ]
-  },
-  {
-    id: "project-heisenberg",
-    title: "Project Heisenberg",
-    encodedTitle: "Pr[Be]ject [He]isenberg",
-    elements: [
-      { symbol: "Be", number: 4, name: "Beryllium", mass: "9.01" },
-      { symbol: "He", number: 2, name: "Helium", mass: "4.00" }
-    ],
-    category: "Flagship Technical Innovation & Working Model",
-    tagline: "99.1% pure engineering ingenuity. Present your novel reactor or process prototype.",
-    badge: "Flagship",
-    themeColor: "from-cyan-400 to-blue-600",
-    glowColor: "rgba(0, 229, 255, 0.45)",
-    borderColor: "border-cyan-400/50",
-    textColor: "text-cyan-300",
-    accentBg: "bg-cyan-500/10",
-    icon: "Atom",
-    day: "Day 2 (10th Oct)",
-    time: "9:30 AM - 1:30 PM",
-    venue: "N-Block Innovation Gallery",
-    format: "Offline Prototype / Simulation",
-    teamSize: "2 - 4 Members",
-    purityYield: "99.1%",
-    description: "The crown jewel of Chemozale. Showcase working prototypes, novel reactor blueprints, biocatalytic pathways, or continuous separation setups to an elite panel of chemical industrialists and academic scholars.",
-    objectives: [
-      "Demonstrate live working bench-scale model or verified dynamic simulation",
-      "Prove scalability, atom economy, and thermodynamic efficiency",
-      "Withstand Heisenberg-grade technical cross-examination"
-    ],
-    rounds: [
-      { name: "Stage 1: Purity Inspection", desc: "Judges review safety, mass balance calculations, and novel patentability." },
-      { name: "Stage 2: Live Prototype Run", desc: "Demonstration of prototype flow, heat recovery, or separation yield." },
-      { name: "Stage 3: Commercial Pitch", desc: "Convince the investment panel of capital expenditure ROI." }
-    ]
-  },
-  {
-    id: "better-call-engineer",
-    title: "Better Call Engineer",
-    encodedTitle: "[B]etter [Ca]ll Engineer",
-    elements: [
-      { symbol: "B", number: 5, name: "Boron", mass: "10.81" },
-      { symbol: "Ca", number: 20, name: "Calcium", mass: "40.07" }
-    ],
-    category: "Industrial Crisis Consultation & HAZOP",
-    tagline: "When the column overpressurizes and the flare stack cuts out, who do you call?",
-    badge: "Consultancy",
-    themeColor: "from-yellow-400 to-amber-600",
-    glowColor: "rgba(250, 204, 21, 0.4)",
-    borderColor: "border-yellow-400/40",
-    textColor: "text-yellow-300",
-    accentBg: "bg-yellow-500/10",
-    icon: "Briefcase",
-    day: "Day 2 (10th Oct)",
-    time: "2:00 PM - 4:30 PM",
-    venue: "A-Block Drawing Hall",
-    format: "Offline",
-    teamSize: "3 - 4 Members",
-    purityYield: "96.4%",
-    description: "Industrial clients face catastrophic compliance deadlines, blown distillation trays, and hazardous effluent spikes. Form a rapid-response consulting syndicate, redesign P&IDs in real-time, and preserve both lives and profits.",
-    objectives: [
-      "Diagnose runaway pressure curves on live refinery process schematics",
-      "Perform emergency HAZOP (Hazard and Operability) analysis under time limits",
-      "Redesign bypass loops and flare relief systems within budget caps"
-    ],
-    rounds: [
-      { name: "Case 1: The Distillation Hazard", desc: "Emergency re-routing of column reflux during condenser fouling." },
-      { name: "Case 2: Effluent Zero-Discharge Crisis", desc: "Solve a toxic wastewater compliance deadline for a pesticide plant." },
-      { name: "Case 3: Client Defense", desc: "Present consulting findings to the industrial managing director." }
-    ]
-  },
-  {
-    id: "research-blueprint",
-    title: "Research Blueprint",
-    encodedTitle: "[Re]search [B]lueprint",
-    elements: [
-      { symbol: "Re", number: 75, name: "Rhenium", mass: "186.20" },
-      { symbol: "B", number: 5, name: "Boron", mass: "10.81" }
-    ],
-    category: "Technical Paper & Scientific Poster",
-    tagline: "From laboratory synthesis to peer-reviewed breakthroughs.",
-    badge: "Research",
-    themeColor: "from-blue-400 to-indigo-600",
-    glowColor: "rgba(59, 130, 246, 0.4)",
-    borderColor: "border-blue-500/40",
-    textColor: "text-blue-300",
-    accentBg: "bg-blue-500/10",
-    icon: "FileSpreadsheet",
-    day: "Day 3 (11th Oct)",
-    time: "9:30 AM - 12:30 PM",
-    venue: "Seminar Hall 2",
-    format: "Offline / Poster & Presentation",
-    teamSize: "1 - 3 Members",
-    purityYield: "98.0%",
-    description: "Submit and present original scientific work spanning carbon capture materials, computational fluid dynamics, membrane bioreactors, and nano-catalytic synthesis.",
-    objectives: [
-      "Present high-impact chemical engineering literature with rigorous rigor",
-      "Defend theoretical formulations against university research mentors",
-      "Gain publication recommendation from the UG Research Cell"
-    ],
-    rounds: [
-      { name: "Track A: Computational & Simulation", desc: "CFD, ASPEN Plus, and molecular modeling papers." },
-      { name: "Track B: Green Materials & Synthesis", desc: "Polymers, bio-surfactants, and effluent treatment kinetics." },
-      { name: "Final Q&A: Peer Defense", desc: "Cross-examination by guest editors and chemical department professors." }
-    ]
-  },
-  {
-    id: "alchemy-of-imperfection",
-    title: "Alchemy of Imperfection",
-    encodedTitle: "[Al]chemy of [I]mperfection",
-    elements: [
-      { symbol: "Al", number: 13, name: "Aluminum", mass: "26.98" },
-      { symbol: "I", number: 53, name: "Iodine", mass: "126.90" }
-    ],
-    category: "Wet Lab Challenge & Creative Chemistry",
-    tagline: "Transform lab impurities and contaminated batches into pure, crystalline yield.",
-    badge: "Wet Lab",
-    themeColor: "from-fuchsia-500 to-purple-700",
-    glowColor: "rgba(217, 70, 239, 0.4)",
-    borderColor: "border-fuchsia-500/40",
-    textColor: "text-fuchsia-300",
-    accentBg: "bg-fuchsia-500/10",
-    icon: "FlaskRound",
-    day: "Day 3 (11th Oct)",
-    time: "1:30 PM - 3:30 PM",
-    venue: "Unit Operations Lab (B-Block)",
-    format: "Hands-on Laboratory",
-    teamSize: "2 Members",
-    purityYield: "95.5%",
-    description: "In chemistry, flawed batches often hide historic discoveries. Given intentionally contaminated reagents, fluctuating pH, and competing reaction pathways, use laboratory wizardry to separate and crystallize the pure target compound.",
-    objectives: [
-      "Perform micro-titrations and precipitation under unknown impurities",
-      "Determine crystallization kinetics with minimal reagent loss",
-      "Score points on final crystal clarity, yield percentage, and safety discipline"
-    ],
-    rounds: [
-      { name: "Lab Round 1: Contaminant Identification", desc: "Qualitative spot tests to deduce the masking ions." },
-      { name: "Lab Round 2: Separation Cascade", desc: "Solvent extraction, filtration, and crystallization race." }
-    ]
-  },
-  {
-    id: "flow-cartel",
-    title: "Flow Cartel",
-    encodedTitle: "Fl[O]w [Ca]rtel",
-    elements: [
-      { symbol: "O", number: 8, name: "Oxygen", mass: "15.99" },
-      { symbol: "Ca", number: 20, name: "Calcium", mass: "40.07" }
-    ],
-    category: "Process Simulation & Pipe Network Control",
-    tagline: "Control the pressures. Route the volumes. Rule the flow.",
-    badge: "Simulation",
-    themeColor: "from-orange-500 to-rose-700",
-    glowColor: "rgba(249, 115, 22, 0.4)",
-    borderColor: "border-orange-500/40",
-    textColor: "text-orange-400",
-    accentBg: "bg-orange-500/10",
-    icon: "Gauge",
-    day: "Day 3 (11th Oct)",
-    time: "3:30 PM - 5:30 PM",
-    venue: "Computer Center Lab 4",
-    format: "Simulation Sprint",
-    teamSize: "2 - 3 Members",
-    purityYield: "99.0%",
-    description: "Master turbulent flow, cavitation spikes, and pump curves in a simulated multi-tier distribution pipeline. Out-balance pressure losses, bypass clogs, and out-deliver rival supply cartels.",
-    objectives: [
-      "Simulate compressible and slurry flow through complex pipeline loops",
-      "Mitigate water hammer shocks during emergency pump trips",
-      "Maximize chemical delivery yield while minimizing pumping horsepower"
-    ],
-    rounds: [
-      { name: "Sprint 1: Steady-State Routing", desc: "Design minimal-friction pipe loop connecting 5 reactor nodes." },
-      { name: "Sprint 2: The Cavitation Surge", desc: "Real-time mitigation of vapor pocket formation in centrifugal pumps." },
-      { name: "Sprint 3: Cartel Showdown", desc: "Live multiplayer simulation competing for refinery feedstock quota." }
-    ]
   }
 ];
 
@@ -293,7 +323,7 @@ export const SCHEDULE_DAYS = [
     themeTitle: "Reactions Initiated — Diagnostics & Sanctions",
     events: [
       { time: "09:00 AM - 10:15 AM", title: "Grand Inauguration & Keynote Address", venue: "C-Auditorium", type: "Ceremony" },
-      { time: "10:30 AM - 01:00 PM", title: "Crack The Case (Phase 1 & 2)", venue: "A-101 (Process Control Lab)", type: "Competition" },
+      { time: "10:30 AM - 01:00 PM", title: "Crack The Case: Real-World Industry Challenge", venue: "A-101 (Process Control Lab)", type: "Competition" },
       { time: "01:00 PM - 02:00 PM", title: "Chemical Commissary (Lunch Break)", venue: "Student Mess", type: "Break" },
       { time: "02:00 PM - 05:00 PM", title: "Nation Clash: Geopolitical Energy Debate", venue: "C-Auditorium", type: "Competition" },
       { time: "05:15 PM - 06:30 PM", title: "IIChE Chemistry Mixer & Networking", venue: "A-Lawn", type: "Social" }
@@ -306,7 +336,7 @@ export const SCHEDULE_DAYS = [
     events: [
       { time: "09:30 AM - 01:30 PM", title: "Project Heisenberg: Flagship Prototype Expo", venue: "N-Block Innovation Gallery", type: "Flagship" },
       { time: "01:30 PM - 02:00 PM", title: "Lunch Break", venue: "Student Mess", type: "Break" },
-      { time: "02:00 PM - 04:30 PM", title: "Better Call Engineer: Industrial HAZOP Crisis", venue: "A-Block Drawing Hall", type: "Competition" },
+      { time: "02:00 PM - 04:30 PM", title: "Better Call Engineer: Industrial Plant Visit & Solution Pitch", venue: "A-Block Drawing Hall", type: "Competition" },
       { time: "04:45 PM - 06:00 PM", title: "Industrial Guest Lecture: Future of Petrochemicals", venue: "Seminar Hall 1", type: "Keynote" },
       { time: "06:30 PM - 09:00 PM", title: "Blue Sky Cultural & Heisenberg DJ Night", venue: "University Amphitheatre", type: "Cultural" }
     ]
@@ -316,10 +346,10 @@ export const SCHEDULE_DAYS = [
     date: "11th October 2026 (Sunday)",
     themeTitle: "The Grand Yield — Papers, Alchemy & Finale",
     events: [
-      { time: "09:30 AM - 12:30 PM", title: "Research Blueprint: Technical Papers Presentation", venue: "Seminar Hall 2", type: "Academic" },
+      { time: "09:30 AM - 12:30 PM", title: "Research Blueprint: Paper & Poster Presentation", venue: "Seminar Hall 2", type: "Academic" },
       { time: "12:30 PM - 01:30 PM", title: "Lunch Break", venue: "Student Mess", type: "Break" },
-      { time: "01:30 PM - 03:30 PM", title: "Alchemy of Imperfection: Wet Lab Separation Challenge", venue: "Unit Operations Lab (B-Block)", type: "Wet Lab" },
-      { time: "03:30 PM - 05:30 PM", title: "Flow Cartel: Pipeline Simulation Sprint", venue: "Computer Center Lab 4", type: "Simulation" },
+      { time: "01:30 PM - 03:30 PM", title: "Alchemy of Imperfection: Kintsugi Art & Chemistry Workshop", venue: "Unit Operations Lab (B-Block)", type: "Wet Lab" },
+      { time: "03:30 PM - 05:30 PM", title: "Flow Cartel: Hands-on ANSYS CFD Workshop", venue: "Computer Center Lab 4", type: "Simulation" },
       { time: "05:45 PM - 07:30 PM", title: "Valedictory Ceremony, Awards & Cash Prizes", venue: "C-Auditorium", type: "Ceremony" }
     ]
   }
@@ -335,15 +365,15 @@ export const FAQ_DATA = [
     a: "Yes! The schedule has been meticulously planned to prevent timing overlaps between core events. You can participate in multiple operations as long as their time slots do not collide."
   },
   {
-    q: "Do I need a prior working prototype for Project Heisenberg?",
-    a: "Working prototypes are heavily encouraged and awarded bonus points, but high-fidelity simulations (ASPEN, COMSOL, CFD) and rigorous engineering design calculations are also eligible."
+    q: "How do I register for individual events?",
+    a: "Each event has its own official Google Form registration link embedded directly within its Operation Dossier card. Click 'REGISTER NOW' on any event card to open its respective form."
   },
   {
-    q: "Are laboratory safety coats and goggles required for wet lab events?",
-    a: "For 'Alchemy of Imperfection', lab coats and safety goggles are strictly mandatory. All basic chemical reagents, glassware, and indicators will be provided on-site."
+    q: "What materials will be provided for 'Alchemy of Imperfection' (Kintsugi)?",
+    a: "All ceramic ware, gold mica pigments, specialty resin adhesives, safety gloves, and finishing tools will be provided to participants during the workshop."
   },
   {
-    q: "How will certificates and cash prizes be awarded?",
-    a: "Official IIChE Nirma University certificates will be awarded to all registered attendees. Winners in each category receive cash prizes, trophies, and research commendations during the Valedictory ceremony."
+    q: "Do I need prior experience with ANSYS CFD for Flow Cartel?",
+    a: "No prior experience is necessary! The Flow Cartel workshop starts with core fundamentals of geometry, meshing, and boundary conditions before guiding you through a practical chemical simulation."
   }
 ];

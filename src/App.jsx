@@ -8,6 +8,8 @@ import ContactSection from './components/ContactSection';
 import FAQSection from './components/FAQSection';
 import Footer from './components/Footer';
 import RVLoader from './components/RVLoader';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 export default function App() {
   const [showRVLoader, setShowRVLoader] = useState(false);
@@ -56,6 +58,10 @@ export default function App() {
 
       {/* Legacy Structure Global Footer */}
       <Footer />
+
+      {/* Production Telemetry */}
+      <Analytics />
+      <SpeedInsights />
     </div>
   );
 }
