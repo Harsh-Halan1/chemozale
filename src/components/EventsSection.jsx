@@ -95,14 +95,15 @@ export default function EventsSection() {
               {/* Gradient Scrim */}
               <div className="absolute inset-0 bg-gradient-to-t from-[#0f1712] via-transparent to-black/40 pointer-events-none" />
 
-              {/* Floating Periodic Badges */}
+              {/* Floating Periodic Badge (1 per event on top left) */}
               <div className="absolute top-3 left-3 flex items-center gap-1.5 z-10">
-                {evt.elements.map((el) => (
+                {evt.elements.slice(0, 1).map((el) => (
                   <PeriodicTile
                     key={el.symbol}
                     number={el.number}
                     symbol={el.symbol}
-                    name=""
+                    name={el.name}
+                    mass={el.mass}
                     size="sm"
                     variant="green"
                     interactive={false}

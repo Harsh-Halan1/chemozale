@@ -66,7 +66,7 @@ export default function Hero() {
             number={6}
             symbol="C"
             name="Carbon"
-            mass="12.011"
+            mass="12"
             size="xl"
             variant="green"
           />
@@ -83,7 +83,7 @@ export default function Hero() {
             number={42}
             symbol="Mo"
             name="Molybd."
-            mass="95.95"
+            mass="96"
             size="xl"
             variant="green"
           />
@@ -100,7 +100,7 @@ export default function Hero() {
             number={13}
             symbol="Al"
             name="Alum."
-            mass="26.98"
+            mass="27"
             size="xl"
             variant="green"
           />

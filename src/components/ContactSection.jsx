@@ -210,13 +210,13 @@ export default function ContactSection() {
                     onChange={(e) => setFormData({ ...formData, operation: e.target.value })}
                     className="w-full px-3.5 py-2.5 rounded-lg bg-black/60 border border-bb-border focus:border-bb-neon focus:ring-1 focus:ring-bb-neon text-sm text-gray-200 font-sans outline-none transition"
                   >
-                    <option value="Crack The Case">Crack The Case ([Cr] + [Ca])</option>
-                    <option value="Nation Clash">Nation Clash ([Na] + [Cl])</option>
-                    <option value="Project Heisenberg">Project Heisenberg ([Be] + [He])</option>
-                    <option value="Better Call Engineer">Better Call Engineer ([B] + [Ca])</option>
-                    <option value="Research Blueprint">Research Blueprint ([Re] + [B])</option>
-                    <option value="Alchemy of Imperfection">Alchemy of Imperfection ([Al] + [I])</option>
-                    <option value="Flow Cartel">Flow Cartel ([O] + [Ca])</option>
+                    <option value="Crack The Case">Crack The Case ([C])</option>
+                    <option value="Nation Clash">Nation Clash ([Na])</option>
+                    <option value="Project Heisenberg">Project Heisenberg ([He])</option>
+                    <option value="Better Call Engineer">Better Call Engineer ([Be])</option>
+                    <option value="Research Blueprint">Research Blueprint ([Re])</option>
+                    <option value="Alchemy of Imperfection">Alchemy of Imperfection ([Al])</option>
+                    <option value="Flow Cartel">Flow Cartel ([F])</option>
                     <option value="General Query">General Registration / Accommodation Query</option>
                   </select>
                 </div>

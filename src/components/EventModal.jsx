@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { X, Calendar, Clock, MapPin, Users, ExternalLink, CheckCircle2, ShieldAlert } from 'lucide-react';
+import { X, Calendar, Clock, MapPin, Users, ExternalLink, CheckCircle2 } from 'lucide-react';
 import PeriodicTile from './PeriodicTile';
 
 export default function EventModal({ event, onClose }) {
@@ -83,6 +83,21 @@ export default function EventModal({ event, onClose }) {
               <p className="text-xs sm:text-sm font-mono text-amber-300 italic mt-2">
                 "{event.tagline}"
               </p>
+
+              {/* Single Top Register Button */}
+              {event.registrationLink && (
+                <div className="mt-4">
+                  <a
+                    href={event.registrationLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-gradient-to-r from-bb-neon via-emerald-400 to-bb-cyan text-black text-xs font-mono font-bold uppercase tracking-wider hover:shadow-[0_0_20px_rgba(0,255,136,0.6)] transition active:scale-95 shadow-lg"
+                  >
+                    <span>Register</span>
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+                </div>
+              )}
             </div>
           </div>
 
@@ -166,56 +181,20 @@ export default function EventModal({ event, onClose }) {
               </div>
             </div>
 
-            {/* Registration Banner inside Modal */}
-            {event.registrationLink && (
-              <div className="p-5 rounded-xl bg-gradient-to-r from-emerald-950/70 via-black to-emerald-950/70 border border-emerald-500/60 flex flex-col sm:flex-row items-center justify-between gap-4">
-                <div>
-                  <h5 className="font-display text-lg text-white tracking-wide">
-                    READY TO ENTER THIS OPERATION?
-                  </h5>
-                  <p className="text-xs font-mono text-gray-300 mt-0.5">
-                    Official registration is open via Google Forms. Secure your slot now.
-                  </p>
-                </div>
-
-                <a
-                  href={event.registrationLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full sm:w-auto px-6 py-3 rounded-xl bg-gradient-to-r from-bb-neon via-emerald-400 to-bb-cyan text-black text-xs font-mono font-bold uppercase tracking-wider hover:shadow-[0_0_25px_rgba(0,255,136,0.6)] transition-all flex items-center justify-center gap-2 shrink-0 active:scale-95"
-                >
-                  <span>REGISTER ON GOOGLE FORM</span>
-                  <ExternalLink className="w-4 h-4" />
-                </a>
-              </div>
-            )}
-
             {/* Footer Actions */}
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-bb-border">
+            <div className="flex items-center justify-between gap-4 pt-4 border-t border-bb-border">
               <div className="text-xs font-mono text-gray-400 flex items-center gap-2">
                 <span className="text-emerald-400">Purity Standard:</span>
                 <span className="text-white font-bold">{event.purityYield}</span>
               </div>
 
-              <div className="flex items-center gap-3 w-full sm:w-auto">
+              <div>
                 <button
                   onClick={onClose}
-                  className="w-1/2 sm:w-auto px-5 py-2.5 rounded-lg border border-bb-border text-gray-300 hover:text-white text-xs font-mono uppercase"
+                  className="px-5 py-2.5 rounded-lg border border-bb-border text-gray-300 hover:text-white text-xs font-mono uppercase transition hover:border-gray-500"
                 >
                   Close Event
                 </button>
-                
-                {event.registrationLink && (
-                  <a
-                    href={event.registrationLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-1/2 sm:w-auto px-6 py-2.5 rounded-lg bg-bb-neon text-black text-xs font-mono font-bold uppercase tracking-wider hover:shadow-[0_0_20px_rgba(0,255,136,0.5)] transition flex items-center justify-center gap-1.5"
-                  >
-                    <span>Register Now</span>
-                    <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
-                )}
               </div>
             </div>
 

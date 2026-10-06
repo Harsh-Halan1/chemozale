@@ -54,7 +54,7 @@ export const SUB_EVENTS = [
     image: crackTheCaseImg,
     // Updated: only C (Carbon) as requested
     elements: [
-      { symbol: "C", number: 6, name: "Carbon", mass: "12.011" }
+      { symbol: "C", number: 6, name: "Carbon", mass: "12" }
     ],
     category: "Industrial Case Challenge & Alumni Mentorship",
     tagline: "Think. Analyse. Solve. Crack the Case!",
@@ -87,12 +87,10 @@ export const SUB_EVENTS = [
   {
     id: "better-call-engineer",
     title: "Better Call Engineer",
-    encodedTitle: "[Be]tter [C]all Engineer",
+    encodedTitle: "[Be]tter Call Engineer",
     image: betterCallImg,
-    // Updated: Be (Beryllium) and C (Carbon) as requested
     elements: [
-      { symbol: "Be", number: 4, name: "Beryllium", mass: "9.012" },
-      { symbol: "C", number: 6, name: "Carbon", mass: "12.011" }
+      { symbol: "Be", number: 4, name: "Beryllium", mass: "9" }
     ],
     category: "Industrial Plant Visit & Solution Pitch",
     tagline: "Analyse. Optimize. Innovate.",
@@ -125,12 +123,10 @@ export const SUB_EVENTS = [
   {
     id: "research-blueprint",
     title: "Research Blueprint",
-    encodedTitle: "[Re]search [B]lueprint",
+    encodedTitle: "[Re]search Blueprint",
     image: researchBlueprintImg,
-    // Kept same: Re (Rhenium) and B (Boron)
     elements: [
-      { symbol: "Re", number: 75, name: "Rhenium", mass: "186.21" },
-      { symbol: "B", number: 5, name: "Boron", mass: "10.81" }
+      { symbol: "Re", number: 75, name: "Rhenium", mass: "186" }
     ],
     category: "Paper & Poster Presentation",
     tagline: "RESEARCH BLUEPRINT — Where Ideas Take Shape. 🔬",
@@ -163,12 +159,10 @@ export const SUB_EVENTS = [
   {
     id: "alchemy-of-imperfection",
     title: "Alchemy of Imperfection",
-    encodedTitle: "[Al]chemy of [I]mperfection",
+    encodedTitle: "[Al]chemy of Imperfection",
     image: alchemyImg,
-    // Kept same: Al (Aluminum) and I (Iodine)
     elements: [
-      { symbol: "Al", number: 13, name: "Aluminum", mass: "26.98" },
-      { symbol: "I", number: 53, name: "Iodine", mass: "126.90" }
+      { symbol: "Al", number: 13, name: "Aluminum", mass: "27" }
     ],
     category: "Kintsugi Ceramic Art & Chemistry",
     tagline: "Where imperfections become art. Embrace the imperfect. Create the extraordinary. ✨",
@@ -201,12 +195,10 @@ export const SUB_EVENTS = [
   {
     id: "flow-cartel",
     title: "Flow Cartel",
-    encodedTitle: "[F]low [Ca]rtel",
+    encodedTitle: "[F]low Cartel",
     image: flowCartelImg,
-    // Updated: F (Fluorine) and Ca (Calcium) as requested
     elements: [
-      { symbol: "F", number: 9, name: "Fluorine", mass: "18.998" },
-      { symbol: "Ca", number: 20, name: "Calcium", mass: "40.08" }
+      { symbol: "F", number: 9, name: "Fluorine", mass: "19" }
     ],
     category: "Hands-on ANSYS CFD Technical Workshop",
     tagline: "Hands-on Computational Fluid Dynamics (CFD) Workshop with ANSYS.",
@@ -239,12 +231,10 @@ export const SUB_EVENTS = [
   {
     id: "project-heisenberg",
     title: "Project Heisenberg",
-    encodedTitle: "[Pr]oject [He]isenberg",
+    encodedTitle: "Project [He]isenberg",
     image: heisenbergImg,
-    // Updated: Pr (Praseodymium) and He (Helium) as requested
     elements: [
-      { symbol: "Pr", number: 59, name: "Praseod.", mass: "140.91" },
-      { symbol: "He", number: 2, name: "Helium", mass: "4.0026" }
+      { symbol: "He", number: 2, name: "Helium", mass: "4" }
     ],
     category: "Flagship Technical Innovation & Working Model",
     tagline: "99.1% pure engineering ingenuity. Present your working process or invention.",
@@ -277,12 +267,10 @@ export const SUB_EVENTS = [
   {
     id: "nation-clash",
     title: "Nation Clash",
-    encodedTitle: "[Na]tion [Cl]ash",
+    encodedTitle: "[Na]tion Clash",
     image: nationClashImg,
-    // Kept same: Na (Sodium) and Cl (Chlorine)
     elements: [
-      { symbol: "Na", number: 11, name: "Sodium", mass: "22.99" },
-      { symbol: "Cl", number: 17, name: "Chlorine", mass: "35.45" }
+      { symbol: "Na", number: 11, name: "Sodium", mass: "23" }
     ],
     category: "Geopolitical Energy & Chemical Policy",
     tagline: "High-stakes debate on energy sanctions, carbon tariffs, and green hydrogen wars.",
@@ -320,7 +308,7 @@ export const SCHEDULE_DAYS = [
     date: "9th October 2026 (Friday)",
     themeTitle: "Launch & CFD Protocols",
     events: [
-      { time: "11:40 AM - 12:00 PM", title: "Launch and Inauguration Ceremony", venue: "A-Lawn", type: "Ceremony" },
+      { time: "11:40 AM - 12:00 PM", title: "Launch and Inauguration", venue: "A-Lawn", type: "Ceremony" },
       { time: "04:00 PM - 06:00 PM", title: "Flow Cartel: Hands-on ANSYS CFD Workshop", venue: "A-101", type: "Simulation" }
     ]
   },
@@ -330,8 +318,8 @@ export const SCHEDULE_DAYS = [
     themeTitle: "The Diagnostic Trials — Blueprints, Forensics & Solutions",
     events: [
       { time: "09:00 AM - 01:00 PM", title: "Research Blueprint: Paper & Poster Presentation", venue: "A-108", type: "Academic" },
-      { time: "12:00 PM - 03:00 PM", title: "Crack The Case: Real-World Industry Challenge", venue: "A-101", type: "Competition" },
-      { time: "02:00 PM - 05:00 PM", title: "Better Call Engineer: Industrial Plant Visit & Solution Pitch", venue: "A-108", type: "Competition" }
+      { time: "12:00 PM - 03:00 PM", title: "Crack The Case", venue: "A-101", type: "Competition" },
+      { time: "02:00 PM - 05:00 PM", title: "Better Call Engineer", venue: "A-108", type: "Competition" }
     ]
   },
   {
@@ -339,9 +327,9 @@ export const SCHEDULE_DAYS = [
     date: "11th October 2026 (Sunday)",
     themeTitle: "The Grand Yield — Alchemy, Prototype Expo & Geopolitical Clash",
     events: [
-      { time: "09:00 AM - 01:00 PM", title: "Alchemy of Imperfection: Kintsugi Art & Chemistry Workshop", venue: "A-108", type: "Wet Lab" },
-      { time: "11:00 AM - 03:00 PM", title: "Project Heisenberg: Flagship Technical Innovation & Working Model", venue: "A-101", type: "Flagship" },
-      { time: "02:30 PM - 05:30 PM", title: "Nation Clash: Geopolitical Energy Debate", venue: "C-Auditorium", type: "Competition" }
+      { time: "09:00 AM - 01:00 PM", title: "Alchemy of Imperfection: Kintsugi Workshop", venue: "A-108", type: "Wet Lab" },
+      { time: "11:00 AM - 03:00 PM", title: "Project Heisenberg", venue: "A-101", type: "Flagship" },
+      { time: "02:30 PM - 05:30 PM", title: "Nation Clash", venue: "C-Auditorium", type: "Competition" }
     ]
   }
 ];

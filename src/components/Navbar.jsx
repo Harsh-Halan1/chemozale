@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Truck } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import iicheLogo from '../assets/iiche_logo.webp';
 
 export default function Navbar({ onOpenRVLoader }) {
@@ -69,18 +69,8 @@ export default function Navbar({ onOpenRVLoader }) {
           ))}
         </nav>
 
-        {/* Actions (RV Loader Preview + Register CTA) */}
+        {/* Actions (Register CTA) */}
         <div className="hidden sm:flex items-center gap-3">
-          {/* 2D RV Animated Loader Trigger */}
-          <button
-            onClick={onOpenRVLoader}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-bb-card border border-bb-border hover:border-amber-500/60 text-xs font-mono text-amber-300 hover:text-amber-200 transition shadow-sm group"
-            title="Preview the 2D Animated RV Loader"
-          >
-            <Truck className="w-3.5 h-3.5 text-amber-400 group-hover:animate-bounce" />
-            <span>RV Loader</span>
-          </button>
-
           {/* Registration Button */}
           <a
             href="#operations"
@@ -92,14 +82,6 @@ export default function Navbar({ onOpenRVLoader }) {
 
         {/* Mobile Hamburger Toggle */}
         <div className="flex md:hidden items-center gap-2">
-          <button
-            onClick={onOpenRVLoader}
-            className="p-1.5 rounded-md bg-bb-card border border-bb-border text-amber-400"
-            title="RV Loader"
-          >
-            <Truck className="w-4 h-4" />
-          </button>
-          
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="p-2 rounded-lg bg-bb-card border border-bb-border text-gray-300 hover:text-bb-neon"

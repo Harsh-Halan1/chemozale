@@ -1,16 +1,59 @@
 import React, { useState } from 'react';
 
+// Comprehensive element lookup table for authentic chemical masses (integers) and names
+const ELEMENT_DATA = {
+  H: { number: 1, name: 'Hydrogen', mass: '1' },
+  He: { number: 2, name: 'Helium', mass: '4' },
+  Li: { number: 3, name: 'Lithium', mass: '7' },
+  Be: { number: 4, name: 'Beryllium', mass: '9' },
+  B: { number: 5, name: 'Boron', mass: '11' },
+  C: { number: 6, name: 'Carbon', mass: '12' },
+  N: { number: 7, name: 'Nitrogen', mass: '14' },
+  O: { number: 8, name: 'Oxygen', mass: '16' },
+  F: { number: 9, name: 'Fluorine', mass: '19' },
+  Ne: { number: 10, name: 'Neon', mass: '20' },
+  Na: { number: 11, name: 'Sodium', mass: '23' },
+  Mg: { number: 12, name: 'Magnesium', mass: '24' },
+  Al: { number: 13, name: 'Aluminum', mass: '27' },
+  Si: { number: 14, name: 'Silicon', mass: '28' },
+  P: { number: 15, name: 'Phosphorus', mass: '31' },
+  S: { number: 16, name: 'Sulfur', mass: '32' },
+  Cl: { number: 17, name: 'Chlorine', mass: '35' },
+  Ar: { number: 18, name: 'Argon', mass: '40' },
+  K: { number: 19, name: 'Potassium', mass: '39' },
+  Ca: { number: 20, name: 'Calcium', mass: '40' },
+  Br: { number: 35, name: 'Bromine', mass: '80' },
+  Mo: { number: 42, name: 'Molybdenum', mass: '96' },
+  I: { number: 53, name: 'Iodine', mass: '127' },
+  Ba: { number: 56, name: 'Barium', mass: '137' },
+  Pr: { number: 59, name: 'Praseodymium', mass: '141' },
+  Re: { number: 75, name: 'Rhenium', mass: '186' },
+  Au: { number: 79, name: 'Gold', mass: '197' },
+  Hg: { number: 80, name: 'Mercury', mass: '201' },
+  Pb: { number: 82, name: 'Lead', mass: '207' },
+  U: { number: 92, name: 'Uranium', mass: '238' }
+};
+
 export default function PeriodicTile({
-  number = 42,
+  number,
   symbol = 'Mo',
-  name = 'Molybdenum',
-  mass = '95.95',
+  name,
+  mass,
   size = 'md', // 'sm', 'md', 'lg', 'xl'
   variant = 'green', // 'green', 'cyan', 'amber'
   interactive = true,
   className = ''
 }) {
   const [showTooltip, setShowTooltip] = useState(false);
+
+  // Derive element data automatically if not explicitly provided
+  const elInfo = ELEMENT_DATA[symbol] || {};
+  const currentNumber = number !== undefined && number !== null ? number : (elInfo.number || '');
+  const currentName = name !== undefined && name !== null && name !== '' ? name : (elInfo.name || '');
+  
+  // Ensure mass is always an integer (no fractions/decimals)
+  const rawMass = mass !== undefined && mass !== null && mass !== '' ? mass : (elInfo.mass || '');
+  const currentMass = rawMass !== '' ? String(Math.round(Number(rawMass)) || rawMass) : '';
 
   // Size mappings
   const sizeClasses = {
@@ -81,11 +124,11 @@ export default function PeriodicTile({
         {/* Atomic Number (Top-Left) & Mass (Top-Right) */}
         <div className="flex justify-between items-start leading-none w-full">
           <span className={`${numberSizes[size]} font-mono font-bold ${currentTheme.accent}`}>
-            {number}
+            {currentNumber}
           </span>
-          {mass && (
+          {currentMass && (
             <span className={`${numberSizes[size]} font-mono opacity-60 text-gray-300 hidden sm:inline`}>
-              {mass}
+              {currentMass}
             </span>
           )}
         </div>
@@ -98,10 +141,10 @@ export default function PeriodicTile({
         </div>
 
         {/* Element Name (Bottom) */}
-        {name && size !== 'sm' && (
+        {currentName && size !== 'sm' && (
           <div className="text-center overflow-hidden">
             <span className="text-[7px] sm:text-[9px] font-mono tracking-wider text-gray-400 uppercase truncate block">
-              {name}
+              {currentName}
             </span>
           </div>
         )}
@@ -111,12 +154,12 @@ export default function PeriodicTile({
       {interactive && showTooltip && (
         <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-2.5 rounded-lg bg-black/95 border border-bb-neon/60 shadow-2xl z-50 pointer-events-none text-left backdrop-blur-md">
           <div className="flex items-center justify-between border-b border-bb-border pb-1 mb-1.5">
-            <span className="font-display tracking-wider text-white text-sm uppercase">{name}</span>
-            <span className="text-xs font-mono text-bb-neon font-bold">#{number}</span>
+            <span className="font-display tracking-wider text-white text-sm uppercase">{currentName || symbol}</span>
+            <span className="text-xs font-mono text-bb-neon font-bold">#{currentNumber}</span>
           </div>
           <div className="text-[11px] font-mono text-gray-300 space-y-0.5">
-            <div><span className="text-gray-500">Atomic Mass:</span> {mass || 'N/A'}</div>
-            <div><span className="text-gray-500">Series:</span> Transition Metal</div>
+            <div><span className="text-gray-500">Atomic Mass:</span> {currentMass || 'N/A'}</div>
+            <div><span className="text-gray-500">Series:</span> Chemical Element</div>
             <div className="text-[10px] text-bb-cyan mt-1">★ Verified Lab Purity 99.1%</div>
           </div>
           {/* Arrow */}
