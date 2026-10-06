@@ -20,7 +20,7 @@ export default function EventModal({ event, onClose }) {
     >
       {/* Modal Dialog Card */}
       <div
-        className="relative w-full max-w-4xl bg-[#0c1410] border border-emerald-500/40 rounded-2xl shadow-2xl overflow-hidden my-8"
+        className="relative w-full max-w-4xl bg-[#0c1410] border border-emerald-500/40 rounded-2xl shadow-2xl overflow-hidden my-4 sm:my-8"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Top Accent Gradient Bar */}
@@ -29,7 +29,7 @@ export default function EventModal({ event, onClose }) {
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-20 p-2 rounded-full bg-black/70 border border-bb-border text-gray-300 hover:text-white hover:border-emerald-400 transition"
+          className="absolute top-3 right-3 sm:top-4 sm:right-4 z-20 p-2 rounded-full bg-black/70 border border-bb-border text-gray-300 hover:text-white hover:border-emerald-400 transition"
           aria-label="Close Modal"
         >
           <X className="w-5 h-5" />
@@ -37,10 +37,10 @@ export default function EventModal({ event, onClose }) {
 
         <div className="max-h-[85vh] overflow-y-auto">
           {/* Header Banner with Event Poster & Periodic Badges */}
-          <div className="relative bg-black/90 border-b border-bb-border flex flex-col md:flex-row items-center p-6 gap-6">
+          <div className="relative bg-black/90 border-b border-bb-border flex flex-col md:flex-row items-center p-4 sm:p-6 gap-4 sm:gap-6">
             {/* Event Artwork */}
             {event.image && (
-              <div className="w-44 sm:w-56 shrink-0 aspect-square rounded-xl overflow-hidden bg-black/60 border border-bb-border flex items-center justify-center p-2 shadow-xl">
+              <div className="w-36 sm:w-48 md:w-56 shrink-0 aspect-square rounded-xl overflow-hidden bg-black/60 border border-bb-border flex items-center justify-center p-2 shadow-xl">
                 <img
                   src={event.image}
                   alt={event.title}
@@ -50,8 +50,8 @@ export default function EventModal({ event, onClose }) {
             )}
 
             {/* Title & Metadata */}
-            <div className="flex-1 text-left">
-              <div className="flex flex-wrap items-center gap-2 mb-3">
+            <div className="flex-1 text-left w-full">
+              <div className="flex flex-wrap items-center gap-2 mb-2 sm:mb-3">
                 <div className="flex items-center gap-1.5">
                   {event.elements.map((el) => (
                     <PeriodicTile
@@ -67,16 +67,16 @@ export default function EventModal({ event, onClose }) {
                   ))}
                 </div>
 
-                <span className="text-xs font-mono px-2.5 py-1 rounded bg-emerald-950/80 text-emerald-300 border border-emerald-500/40 uppercase tracking-wider font-semibold">
+                <span className="text-[11px] sm:text-xs font-mono px-2 sm:px-2.5 py-0.5 sm:py-1 rounded bg-emerald-950/80 text-emerald-300 border border-emerald-500/40 uppercase tracking-wider font-semibold">
                   {event.badge}
                 </span>
 
-                <span className="text-xs font-mono text-gray-400">
+                <span className="text-[11px] sm:text-xs font-mono text-gray-400">
                   {event.category}
                 </span>
               </div>
 
-              <h3 className="text-2xl sm:text-4xl font-display tracking-wider text-white">
+              <h3 className="text-xl sm:text-3xl md:text-4xl font-display tracking-wider text-white">
                 {event.title}
               </h3>
 

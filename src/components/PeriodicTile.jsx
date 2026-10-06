@@ -55,26 +55,26 @@ export default function PeriodicTile({
   const rawMass = mass !== undefined && mass !== null && mass !== '' ? mass : (elInfo.mass || '');
   const currentMass = rawMass !== '' ? String(Math.round(Number(rawMass)) || rawMass) : '';
 
-  // Size mappings
+  // Size mappings (dynamic and responsive across all device viewports)
   const sizeClasses = {
-    sm: 'w-11 h-11 text-xs border-[1.5px]',
-    md: 'w-14 h-14 text-sm border-2',
-    lg: 'w-20 h-20 text-lg border-2',
-    xl: 'w-24 h-24 sm:w-28 sm:h-28 text-xl sm:text-2xl border-[3px]'
+    sm: 'w-10 h-10 sm:w-11 sm:h-11 text-xs border-[1.5px]',
+    md: 'w-12 h-12 sm:w-14 sm:h-14 text-sm border-2',
+    lg: 'w-16 h-16 sm:w-20 sm:h-20 text-base sm:text-lg border-2',
+    xl: 'w-12 h-12 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 text-xs sm:text-xl md:text-2xl border-2 sm:border-[3px]'
   };
 
   const numberSizes = {
-    sm: 'text-[8px]',
-    md: 'text-[9px]',
-    lg: 'text-[11px]',
-    xl: 'text-xs sm:text-sm'
+    sm: 'text-[7px] sm:text-[8px]',
+    md: 'text-[8px] sm:text-[9px]',
+    lg: 'text-[9px] sm:text-[11px]',
+    xl: 'text-[7px] sm:text-xs md:text-sm'
   };
 
   const symbolSizes = {
-    sm: 'text-sm font-black',
-    md: 'text-base font-black',
-    lg: 'text-2xl font-black',
-    xl: 'text-4xl sm:text-5xl font-black'
+    sm: 'text-xs sm:text-sm font-black',
+    md: 'text-sm sm:text-base font-black',
+    lg: 'text-lg sm:text-2xl font-black',
+    xl: 'text-lg sm:text-3xl md:text-4xl lg:text-5xl font-black'
   };
 
   // Variant themes
@@ -118,7 +118,7 @@ export default function PeriodicTile({
           ${currentTheme.border}
           ${interactive ? currentTheme.glow : ''}
           ${className}
-          rounded-md flex flex-col justify-between p-1.5 transition-all duration-300 cursor-pointer select-none relative shadow-lg
+          rounded-md flex flex-col justify-between p-1 sm:p-1.5 transition-all duration-300 cursor-pointer select-none relative shadow-lg
         `}
       >
         {/* Atomic Number (Top-Left) & Mass (Top-Right) */}
@@ -142,7 +142,7 @@ export default function PeriodicTile({
 
         {/* Element Name (Bottom) */}
         {currentName && size !== 'sm' && (
-          <div className="text-center overflow-hidden">
+          <div className="text-center overflow-hidden hidden sm:block">
             <span className="text-[7px] sm:text-[9px] font-mono tracking-wider text-gray-400 uppercase truncate block">
               {currentName}
             </span>

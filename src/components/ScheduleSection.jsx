@@ -37,18 +37,18 @@ export default function ScheduleSection() {
       </div>
 
       {/* Day Selector Tabs */}
-      <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-10">
+      <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8 sm:mb-10">
         {SCHEDULE_DAYS.map((day, idx) => (
           <button
             key={day.dayNumber}
             onClick={() => setActiveDayIdx(idx)}
-            className={`px-5 py-3 rounded-xl font-mono text-xs sm:text-sm tracking-wider uppercase transition-all duration-300 flex items-center gap-2 border ${
+            className={`px-3.5 sm:px-5 py-2.5 sm:py-3 rounded-xl font-mono text-xs sm:text-sm tracking-wider uppercase transition-all duration-300 flex items-center gap-1.5 sm:gap-2 border ${
               activeDayIdx === idx
                 ? 'bg-gradient-to-r from-emerald-900/80 to-bb-dark border-emerald-400 text-bb-neon shadow-[0_0_20px_rgba(0,255,136,0.3)]'
                 : 'bg-bb-card border-bb-border text-gray-400 hover:text-white hover:border-gray-600'
             }`}
           >
-            <Calendar className="w-4 h-4" />
+            <Calendar className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
             <span className="font-bold">DAY {day.dayNumber}</span>
             <span className="text-gray-500 hidden sm:inline">•</span>
             <span className="text-xs text-gray-300 hidden sm:inline">{day.date.split('(')[0]}</span>
@@ -57,28 +57,28 @@ export default function ScheduleSection() {
       </div>
 
       {/* Active Day Header */}
-      <div className="py-2.5 px-4 rounded-xl bg-[#0c1410] border border-bb-border mb-6 text-center max-w-sm mx-auto">
+      <div className="py-2 px-3 sm:py-2.5 sm:px-4 rounded-xl bg-[#0c1410] border border-bb-border mb-6 text-center max-w-sm mx-auto">
         <span className="text-xs sm:text-sm font-mono text-bb-neon tracking-widest uppercase font-semibold">
           {currentDay.date}
         </span>
       </div>
 
       {/* Timeline List */}
-      <div className="max-w-3xl mx-auto space-y-4">
+      <div className="max-w-3xl mx-auto space-y-3 sm:space-y-4">
         {currentDay.events.map((item, i) => (
           <div
             key={i}
             className="flex flex-col sm:flex-row sm:items-center justify-between p-4 sm:p-5 rounded-xl bg-bb-card border border-bb-border hover:border-emerald-500/40 transition-all hover:translate-x-1 shadow-md group"
           >
-            <div className="flex items-start sm:items-center gap-4">
+            <div className="flex flex-col sm:flex-row sm:items-center items-start gap-2.5 sm:gap-4 w-full">
               {/* Time Pill */}
-              <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-black/60 border border-bb-border text-xs font-mono text-emerald-400 shrink-0">
+              <div className="flex items-center gap-1.5 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg bg-black/60 border border-bb-border text-[11px] sm:text-xs font-mono text-emerald-400 shrink-0 self-start sm:self-auto">
                 <Clock className="w-3.5 h-3.5 text-bb-neon" />
                 <span>{item.time}</span>
               </div>
 
-              <div>
-                <h4 className="font-display text-lg sm:text-xl text-white tracking-wider group-hover:text-bb-neon transition">
+              <div className="flex-1 min-w-0">
+                <h4 className="font-display text-base sm:text-xl text-white tracking-wider group-hover:text-bb-neon transition leading-snug">
                   {item.title}
                 </h4>
                 <div className="flex items-center gap-1.5 text-xs font-mono text-gray-400 mt-1">

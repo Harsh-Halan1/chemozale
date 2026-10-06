@@ -60,7 +60,7 @@ export default function Hero() {
         {/* Periodic Wordmark: [C] H E [Mo] Z [Al] E 
             Proportionally calibrated: non-element characters use font-sans font-black 
             matching the tile characters with the exact same height and cap-height */}
-        <div className="flex flex-wrap items-center justify-center gap-1 sm:gap-2 max-w-5xl mx-auto py-2">
+        <div className="flex items-center justify-center gap-1 sm:gap-2 max-w-5xl mx-auto py-2">
           {/* [6] C */}
           <PeriodicTile
             number={6}
@@ -72,8 +72,8 @@ export default function Hero() {
           />
           
           {/* HE - perfectly matched in height and font-weight with element symbols */}
-          <div className="h-24 sm:h-28 flex items-center justify-center px-1 sm:px-1.5">
-            <span className="font-sans font-black text-4xl sm:text-5xl text-white select-none leading-none tracking-tight drop-shadow-md">
+          <div className="h-12 sm:h-20 md:h-24 lg:h-28 flex items-center justify-center px-0.5 sm:px-1.5">
+            <span className="font-sans font-black text-xl sm:text-3xl md:text-4xl lg:text-5xl text-white select-none leading-none tracking-tight drop-shadow-md">
               HE
             </span>
           </div>
@@ -89,8 +89,8 @@ export default function Hero() {
           />
 
           {/* Z */}
-          <div className="h-24 sm:h-28 flex items-center justify-center px-0.5 sm:px-1">
-            <span className="font-sans font-black text-4xl sm:text-5xl text-white select-none leading-none tracking-tight drop-shadow-md">
+          <div className="h-12 sm:h-20 md:h-24 lg:h-28 flex items-center justify-center px-0.5 sm:px-1">
+            <span className="font-sans font-black text-xl sm:text-3xl md:text-4xl lg:text-5xl text-white select-none leading-none tracking-tight drop-shadow-md">
               Z
             </span>
           </div>
@@ -106,15 +106,15 @@ export default function Hero() {
           />
 
           {/* E */}
-          <div className="h-24 sm:h-28 flex items-center justify-center px-0.5 sm:px-1">
-            <span className="font-sans font-black text-4xl sm:text-5xl text-white select-none leading-none tracking-tight drop-shadow-md">
+          <div className="h-12 sm:h-20 md:h-24 lg:h-28 flex items-center justify-center px-0.5 sm:px-1">
+            <span className="font-sans font-black text-xl sm:text-3xl md:text-4xl lg:text-5xl text-white select-none leading-none tracking-tight drop-shadow-md">
               E
             </span>
           </div>
         </div>
 
         {/* Poster Style Tagline */}
-        <p className="mt-4 text-sm sm:text-base md:text-xl font-display tracking-[0.25em] sm:tracking-[0.35em] text-amber-400 uppercase drop-shadow">
+        <p className="mt-4 text-xs sm:text-base md:text-xl font-display tracking-[0.2em] sm:tracking-[0.35em] text-amber-400 uppercase drop-shadow">
           {FEST_DATA.tagline}
         </p>
       </div>
