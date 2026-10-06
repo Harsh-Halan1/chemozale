@@ -48,7 +48,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-amber-400" />
-                <span>Tirth Sanghvi: +91 94265 04779</span>
+                <span>Tirth Shanghvi: +91 94265 04779</span>
               </div>
             </div>
 

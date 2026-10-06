@@ -25,15 +25,13 @@ export const FEST_DATA = {
       name: "Mayur Tanna",
       phone: "+91 98797 20125",
       cleanPhone: "919879720125",
-      role: "Lead Operations & Logistics Coordinator",
-      codeName: "The Distributor"
+      role: "Secretary"
     },
     {
-      name: "Tirth Sanghvi",
+      name: "Tirth Shanghvi",
       phone: "+91 94265 04779",
       cleanPhone: "919426504779",
-      role: "Lead Technical & Operations Coordinator",
-      codeName: "The Alchemist"
+      role: "Joint Secretary"
     }
   ],
   quote: {
@@ -56,7 +54,7 @@ export const SUB_EVENTS = [
     image: crackTheCaseImg,
     // Updated: only C (Carbon) as requested
     elements: [
-      { symbol: "C", number: 6, name: "Carbon", mass: "12.01" }
+      { symbol: "C", number: 6, name: "Carbon", mass: "12.011" }
     ],
     category: "Industrial Case Challenge & Alumni Mentorship",
     tagline: "Think. Analyse. Solve. Crack the Case!",
@@ -67,9 +65,9 @@ export const SUB_EVENTS = [
     textColor: "text-emerald-400",
     accentBg: "bg-emerald-500/10",
     icon: "Search",
-    day: "Day 1 (9th Oct)",
-    time: "10:30 AM - 1:00 PM",
-    venue: "A-101 (Process Control Lab)",
+    day: "Day 2 (10th Oct)",
+    time: "12:00 PM - 03:00 PM",
+    venue: "A-101",
     format: "Offline",
     teamSize: "2 - 4 Members",
     purityYield: "98.5%",
@@ -93,8 +91,8 @@ export const SUB_EVENTS = [
     image: betterCallImg,
     // Updated: Be (Beryllium) and C (Carbon) as requested
     elements: [
-      { symbol: "Be", number: 4, name: "Beryllium", mass: "9.01" },
-      { symbol: "C", number: 6, name: "Carbon", mass: "12.01" }
+      { symbol: "Be", number: 4, name: "Beryllium", mass: "9.012" },
+      { symbol: "C", number: 6, name: "Carbon", mass: "12.011" }
     ],
     category: "Industrial Plant Visit & Solution Pitch",
     tagline: "Analyse. Optimize. Innovate.",
@@ -106,8 +104,8 @@ export const SUB_EVENTS = [
     accentBg: "bg-yellow-500/10",
     icon: "Briefcase",
     day: "Day 2 (10th Oct)",
-    time: "2:00 PM - 4:30 PM",
-    venue: "A-Block Drawing Hall / Industrial Site",
+    time: "02:00 PM - 05:00 PM",
+    venue: "A-108",
     format: "Offline / Plant Visit",
     teamSize: "3 - 4 Members",
     purityYield: "99.1%",
@@ -131,7 +129,7 @@ export const SUB_EVENTS = [
     image: researchBlueprintImg,
     // Kept same: Re (Rhenium) and B (Boron)
     elements: [
-      { symbol: "Re", number: 75, name: "Rhenium", mass: "186.20" },
+      { symbol: "Re", number: 75, name: "Rhenium", mass: "186.21" },
       { symbol: "B", number: 5, name: "Boron", mass: "10.81" }
     ],
     category: "Paper & Poster Presentation",
@@ -143,9 +141,9 @@ export const SUB_EVENTS = [
     textColor: "text-blue-300",
     accentBg: "bg-blue-500/10",
     icon: "FileSpreadsheet",
-    day: "Day 3 (11th Oct)",
-    time: "9:30 AM - 12:30 PM",
-    venue: "Seminar Hall 2",
+    day: "Day 2 (10th Oct)",
+    time: "09:00 AM - 01:00 PM",
+    venue: "A-108",
     format: "Offline / Paper & Poster",
     teamSize: "1 - 3 Members",
     purityYield: "98.0%",
@@ -182,8 +180,8 @@ export const SUB_EVENTS = [
     accentBg: "bg-fuchsia-500/10",
     icon: "FlaskRound",
     day: "Day 3 (11th Oct)",
-    time: "1:30 PM - 3:30 PM",
-    venue: "Unit Operations Lab (B-Block)",
+    time: "09:00 AM - 01:00 PM",
+    venue: "A-108",
     format: "Hands-on Workshop / Artistry",
     teamSize: "Individual / Pair",
     purityYield: "99.1%",
@@ -207,7 +205,7 @@ export const SUB_EVENTS = [
     image: flowCartelImg,
     // Updated: F (Fluorine) and Ca (Calcium) as requested
     elements: [
-      { symbol: "F", number: 9, name: "Fluorine", mass: "19.00" },
+      { symbol: "F", number: 9, name: "Fluorine", mass: "18.998" },
       { symbol: "Ca", number: 20, name: "Calcium", mass: "40.08" }
     ],
     category: "Hands-on ANSYS CFD Technical Workshop",
@@ -219,9 +217,9 @@ export const SUB_EVENTS = [
     textColor: "text-orange-400",
     accentBg: "bg-orange-500/10",
     icon: "Gauge",
-    day: "Day 3 (11th Oct)",
-    time: "3:30 PM - 5:30 PM",
-    venue: "Computer Center Lab 4",
+    day: "Day 1 (9th Oct)",
+    time: "04:00 PM - 06:00 PM",
+    venue: "A-101",
     format: "Hands-on Workshop",
     teamSize: "Individual / Pair",
     purityYield: "99.0%",
@@ -246,7 +244,7 @@ export const SUB_EVENTS = [
     // Updated: Pr (Praseodymium) and He (Helium) as requested
     elements: [
       { symbol: "Pr", number: 59, name: "Praseod.", mass: "140.91" },
-      { symbol: "He", number: 2, name: "Helium", mass: "4.00" }
+      { symbol: "He", number: 2, name: "Helium", mass: "4.0026" }
     ],
     category: "Flagship Technical Innovation & Working Model",
     tagline: "99.1% pure engineering ingenuity. Present your working process or invention.",
@@ -257,9 +255,9 @@ export const SUB_EVENTS = [
     textColor: "text-cyan-300",
     accentBg: "bg-cyan-500/10",
     icon: "Atom",
-    day: "Day 2 (10th Oct)",
-    time: "9:30 AM - 1:30 PM",
-    venue: "N-Block Innovation Gallery",
+    day: "Day 3 (11th Oct)",
+    time: "11:00 AM - 03:00 PM",
+    venue: "A-101",
     format: "Offline Prototype / Simulation",
     teamSize: "2 - 4 Members",
     purityYield: "99.1%",
@@ -283,7 +281,7 @@ export const SUB_EVENTS = [
     image: nationClashImg,
     // Kept same: Na (Sodium) and Cl (Chlorine)
     elements: [
-      { symbol: "Na", number: 11, name: "Sodium", mass: "22.98" },
+      { symbol: "Na", number: 11, name: "Sodium", mass: "22.99" },
       { symbol: "Cl", number: 17, name: "Chlorine", mass: "35.45" }
     ],
     category: "Geopolitical Energy & Chemical Policy",
@@ -295,8 +293,8 @@ export const SUB_EVENTS = [
     textColor: "text-amber-400",
     accentBg: "bg-amber-500/10",
     icon: "Globe",
-    day: "Day 1 (9th Oct)",
-    time: "2:00 PM - 5:00 PM",
+    day: "Day 3 (11th Oct)",
+    time: "02:30 PM - 05:30 PM",
     venue: "C-Auditorium",
     format: "Offline",
     teamSize: "1 - 2 Members",
@@ -320,37 +318,30 @@ export const SCHEDULE_DAYS = [
   {
     dayNumber: "1",
     date: "9th October 2026 (Friday)",
-    themeTitle: "Reactions Initiated — Diagnostics & Sanctions",
+    themeTitle: "Launch & CFD Protocols",
     events: [
-      { time: "09:00 AM - 10:15 AM", title: "Grand Inauguration & Keynote Address", venue: "C-Auditorium", type: "Ceremony" },
-      { time: "10:30 AM - 01:00 PM", title: "Crack The Case: Real-World Industry Challenge", venue: "A-101 (Process Control Lab)", type: "Competition" },
-      { time: "01:00 PM - 02:00 PM", title: "Chemical Commissary (Lunch Break)", venue: "Student Mess", type: "Break" },
-      { time: "02:00 PM - 05:00 PM", title: "Nation Clash: Geopolitical Energy Debate", venue: "C-Auditorium", type: "Competition" },
-      { time: "05:15 PM - 06:30 PM", title: "IIChE Chemistry Mixer & Networking", venue: "A-Lawn", type: "Social" }
+      { time: "11:40 AM - 12:00 PM", title: "Launch and Inauguration Ceremony", venue: "A-Lawn", type: "Ceremony" },
+      { time: "04:00 PM - 06:00 PM", title: "Flow Cartel: Hands-on ANSYS CFD Workshop", venue: "A-101", type: "Simulation" }
     ]
   },
   {
     dayNumber: "2",
     date: "10th October 2026 (Saturday)",
-    themeTitle: "The Synthesis — Inventions & High-Yield Crisis",
+    themeTitle: "The Diagnostic Trials — Blueprints, Forensics & Solutions",
     events: [
-      { time: "09:30 AM - 01:30 PM", title: "Project Heisenberg: Flagship Prototype Expo", venue: "N-Block Innovation Gallery", type: "Flagship" },
-      { time: "01:30 PM - 02:00 PM", title: "Lunch Break", venue: "Student Mess", type: "Break" },
-      { time: "02:00 PM - 04:30 PM", title: "Better Call Engineer: Industrial Plant Visit & Solution Pitch", venue: "A-Block Drawing Hall", type: "Competition" },
-      { time: "04:45 PM - 06:00 PM", title: "Industrial Guest Lecture: Future of Petrochemicals", venue: "Seminar Hall 1", type: "Keynote" },
-      { time: "06:30 PM - 09:00 PM", title: "Blue Sky Cultural & Heisenberg DJ Night", venue: "University Amphitheatre", type: "Cultural" }
+      { time: "09:00 AM - 01:00 PM", title: "Research Blueprint: Paper & Poster Presentation", venue: "A-108", type: "Academic" },
+      { time: "12:00 PM - 03:00 PM", title: "Crack The Case: Real-World Industry Challenge", venue: "A-101", type: "Competition" },
+      { time: "02:00 PM - 05:00 PM", title: "Better Call Engineer: Industrial Plant Visit & Solution Pitch", venue: "A-108", type: "Competition" }
     ]
   },
   {
     dayNumber: "3",
     date: "11th October 2026 (Sunday)",
-    themeTitle: "The Grand Yield — Papers, Alchemy & Finale",
+    themeTitle: "The Grand Yield — Alchemy, Prototype Expo & Geopolitical Clash",
     events: [
-      { time: "09:30 AM - 12:30 PM", title: "Research Blueprint: Paper & Poster Presentation", venue: "Seminar Hall 2", type: "Academic" },
-      { time: "12:30 PM - 01:30 PM", title: "Lunch Break", venue: "Student Mess", type: "Break" },
-      { time: "01:30 PM - 03:30 PM", title: "Alchemy of Imperfection: Kintsugi Art & Chemistry Workshop", venue: "Unit Operations Lab (B-Block)", type: "Wet Lab" },
-      { time: "03:30 PM - 05:30 PM", title: "Flow Cartel: Hands-on ANSYS CFD Workshop", venue: "Computer Center Lab 4", type: "Simulation" },
-      { time: "05:45 PM - 07:30 PM", title: "Valedictory Ceremony, Awards & Cash Prizes", venue: "C-Auditorium", type: "Ceremony" }
+      { time: "09:00 AM - 01:00 PM", title: "Alchemy of Imperfection: Kintsugi Art & Chemistry Workshop", venue: "A-108", type: "Wet Lab" },
+      { time: "11:00 AM - 03:00 PM", title: "Project Heisenberg: Flagship Technical Innovation & Working Model", venue: "A-101", type: "Flagship" },
+      { time: "02:30 PM - 05:30 PM", title: "Nation Clash: Geopolitical Energy Debate", venue: "C-Auditorium", type: "Competition" }
     ]
   }
 ];
@@ -366,7 +357,7 @@ export const FAQ_DATA = [
   },
   {
     q: "How do I register for individual events?",
-    a: "Each event has its own official Google Form registration link embedded directly within its Operation Dossier card. Click 'REGISTER NOW' on any event card to open its respective form."
+    a: "Each event has its own official Google Form registration link embedded directly within its event card. Click 'See Event' or 'REGISTER' on any event card to open its respective form."
   },
   {
     q: "What materials will be provided for 'Alchemy of Imperfection' (Kintsugi)?",

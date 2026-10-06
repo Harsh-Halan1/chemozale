@@ -66,9 +66,6 @@ export default function ContactSection() {
                         <h4 className="text-xl font-display text-white tracking-wide group-hover:text-bb-neon transition">
                           {lead.name}
                         </h4>
-                        <span className="text-[10px] font-mono text-amber-400 bg-amber-950/60 px-1.5 py-0.5 rounded border border-amber-800">
-                          {lead.codeName}
-                        </span>
                       </div>
                       <p className="text-xs text-gray-400 font-sans mt-0.5">
                         {lead.role}

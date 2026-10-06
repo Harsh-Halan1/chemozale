@@ -57,13 +57,10 @@ export default function ScheduleSection() {
       </div>
 
       {/* Active Day Header */}
-      <div className="p-4 rounded-xl bg-[#0c1410] border border-bb-border mb-6 text-center max-w-2xl mx-auto">
-        <span className="text-xs font-mono text-bb-neon tracking-widest uppercase block mb-1">
+      <div className="py-2.5 px-4 rounded-xl bg-[#0c1410] border border-bb-border mb-6 text-center max-w-sm mx-auto">
+        <span className="text-xs sm:text-sm font-mono text-bb-neon tracking-widest uppercase font-semibold">
           {currentDay.date}
         </span>
-        <h3 className="text-lg sm:text-xl font-display text-white tracking-wide">
-          "{currentDay.themeTitle}"
-        </h3>
       </div>
 
       {/* Timeline List */}
@@ -89,17 +86,6 @@ export default function ScheduleSection() {
                   <span>{item.venue}</span>
                 </div>
               </div>
-            </div>
-
-            {/* Event Type Pill */}
-            <div className="mt-3 sm:mt-0 self-start sm:self-center">
-              <span
-                className={`text-[10px] font-mono px-2.5 py-1 rounded border uppercase tracking-wider ${
-                  typeColorMap[item.type] || 'text-gray-300 bg-gray-900 border-gray-700'
-                }`}
-              >
-                {item.type}
-              </span>
             </div>
           </div>
         ))}

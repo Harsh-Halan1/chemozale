@@ -45,8 +45,8 @@ export default function Hero() {
       {/* Top Department Eyebrow Tag */}
       <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-bb-card border border-bb-border mb-6 shadow-lg animate-pulse-slow">
         <span className="w-2 h-2 rounded-full bg-bb-neon animate-ping"></span>
-        <span className="text-xs sm:text-sm font-mono tracking-wider text-emerald-400 font-semibold uppercase">
-          {FEST_DATA.department}, {FEST_DATA.institution}
+        <span className="text-xs sm:text-sm font-mono tracking-wider text-emerald-400 font-semibold">
+          INDIAN INSTITUTE OF CHEMICAL ENGINEERS (<span className="normal-case">IIChE</span>), NIRMA UNIVERSITY
         </span>
         <span className="hidden sm:inline-block text-[11px] font-mono px-2 py-0.5 rounded bg-emerald-950/80 text-emerald-300 border border-emerald-700/50">
           NAAC A+
@@ -66,7 +66,7 @@ export default function Hero() {
             number={6}
             symbol="C"
             name="Carbon"
-            mass="12.01"
+            mass="12.011"
             size="xl"
             variant="green"
           />

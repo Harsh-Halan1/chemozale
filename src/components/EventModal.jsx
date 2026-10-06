@@ -202,7 +202,7 @@ export default function EventModal({ event, onClose }) {
                   onClick={onClose}
                   className="w-1/2 sm:w-auto px-5 py-2.5 rounded-lg border border-bb-border text-gray-300 hover:text-white text-xs font-mono uppercase"
                 >
-                  Close Dossier
+                  Close Event
                 </button>
                 
                 {event.registrationLink && (

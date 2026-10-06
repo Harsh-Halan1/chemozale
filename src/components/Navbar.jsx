@@ -50,7 +50,7 @@ export default function Navbar({ onOpenRVLoader }) {
                 '26
               </span>
             </div>
-            <span className="text-[10px] font-mono tracking-wider text-gray-400 uppercase hidden sm:block">
+            <span className="text-[10px] font-mono tracking-wider text-gray-400 hidden sm:block">
               IIChE • NIRMA UNIVERSITY
             </span>
           </div>

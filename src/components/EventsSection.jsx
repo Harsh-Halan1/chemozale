@@ -172,7 +172,7 @@ export default function EventsSection() {
                     onClick={() => setSelectedEvent(evt)}
                     className="flex-1 py-2 px-3 rounded-lg bg-bb-card border border-bb-border hover:border-emerald-500/60 hover:text-white text-gray-300 transition text-center uppercase tracking-wider flex items-center justify-center gap-1"
                   >
-                    <span>Dossier</span>
+                    <span>See Event</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </button>
 
