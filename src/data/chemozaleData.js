@@ -251,7 +251,7 @@ export const SUB_EVENTS = [
     format: "Offline Prototype / Simulation",
     teamSize: "2 - 4 Members",
     purityYield: "99.1%",
-    registrationLink: "https://forms.gle/Djr6z6fNMcAYbdvg9",
+    registrationLink: "https://forms.gle/beVSotfRcEofRLAC9",
     description: "The crown jewel of Chemozale. Showcase working prototypes, novel reactor blueprints, biocatalytic pathways, or continuous separation setups to an elite panel of chemical industrialists and academic scholars.",
     objectives: [
       "Demonstrate live working bench-scale model or verified dynamic simulation",
